@@ -5,10 +5,12 @@ on:
     branches: [ main ]
     paths: 
       - 'DateOnlyTimeOnly.AspNet/**'
+      - '.github/workflows/**'
   pull_request:
     branches: [ main ]
     paths: 
       - 'DateOnlyTimeOnly.AspNet/**'
+      - '.github/workflows/**'
 
 jobs:
   build:
