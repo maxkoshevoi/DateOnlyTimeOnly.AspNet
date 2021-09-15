@@ -6,10 +6,6 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DateOnlyTimeOnly.AspNet", "DateOnlyTimeOnly.AspNet\DateOnlyTimeOnly.AspNet.csproj", "{1007D745-4675-4089-8814-BDFCDD6B7D87}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{123CC2B7-516F-49B8-8568-1F327C2FAA49}"
-	ProjectSection(SolutionItems) = preProject
-		.github\workflows\build.yml = .github\workflows\build.yml
-		.github\workflows\publish.yml = .github\workflows\publish.yml
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{C034BB86-04DE-4B74-9F71-9A7A02719CE3}"
 	ProjectSection(SolutionItems) = preProject

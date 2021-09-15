@@ -3,14 +3,19 @@ name: Publish
 on:
   push:
     branches: [ main ]
+    paths: 
+      - 'DateOnlyTimeOnly.AspNet/**'
 
 jobs:
   publish:
-
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v2
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 6.0.x
+        include-prerelease: true
     - name: Publish NuGet
       uses: brandedoutcast/publish-nuget@v2
       with:
