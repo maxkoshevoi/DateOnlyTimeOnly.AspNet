@@ -3,8 +3,12 @@ using System.Globalization;
 
 namespace DateOnlyTimeOnly.AspNet.Converters;
 
-public class TimeOnlyTypeConverter : TypeConverter
+public abstract class StringTypeConverterBase<T> : TypeConverter
 {
+    protected abstract T Parse(string s);
+
+    protected abstract string ToIcoString(T source);
+
     public override bool CanConvertFrom(ITypeDescriptorContext? context, Type sourceType)
     {
         if (sourceType == typeof(string))
@@ -18,7 +22,7 @@ public class TimeOnlyTypeConverter : TypeConverter
     {
         if (value is string str)
         {
-            return TimeOnly.Parse(str);
+            return Parse(str);
         }
         return base.ConvertFrom(context, culture, value);
     }
@@ -33,9 +37,9 @@ public class TimeOnlyTypeConverter : TypeConverter
     }
     public override object? ConvertTo(ITypeDescriptorContext? context, CultureInfo? culture, object? value, Type destinationType)
     {
-        if (destinationType == typeof(string) && value is TimeOnly date)
+        if (destinationType == typeof(string) && value is T typedValue)
         {
-            return date.ToString("O");
+            return ToIcoString(typedValue);
         }
         return base.ConvertTo(context, culture, value, destinationType);
     }
