@@ -10,7 +10,7 @@
   <PropertyGroup>
     <PackageId>DateOnlyTimeOnly.AspNet</PackageId>
     <Description>Adds support for recieving and returning DateOnly/TimeOnly as ISO 8601 string to ASP.NET API</Description>
-    <PackageTags>DateOnly, TimeOnly, ASP.NET</PackageTags>
+    <PackageTags>DateOnly, TimeOnly, AspNet, AspNetWebApi</PackageTags>
     <Copyright>Maksym Koshovyi © 2021</Copyright>
     <Authors>Maksym Koshovyi</Authors>
     <RepositoryUrl>https://github.com/maxkoshevoi/DateOnlyTimeOnly.AspNet</RepositoryUrl>
