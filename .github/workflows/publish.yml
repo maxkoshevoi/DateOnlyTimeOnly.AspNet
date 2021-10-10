@@ -22,3 +22,4 @@ jobs:
       with:
         PROJECT_FILE_PATH: DateOnlyTimeOnly.AspNet/DateOnlyTimeOnly.AspNet.csproj
         NUGET_KEY: ${{secrets.NUGET_API_KEY}}
+        INCLUDE_SYMBOLS: true
