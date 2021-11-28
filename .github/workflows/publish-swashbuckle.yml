@@ -19,7 +19,7 @@ jobs:
     - name: 🚀 Publish NuGet
       uses: brandedoutcast/publish-nuget@v2
       with:
-        PROJECT_FILE_PATH: DateOnlyTimeOnly.AspNet/DateOnlyTimeOnly.AspNet.Swashbuckle.csproj
+        PROJECT_FILE_PATH: DateOnlyTimeOnly.AspNet.Swashbuckle/DateOnlyTimeOnly.AspNet.Swashbuckle.csproj
         NUGET_KEY: ${{secrets.NUGET_API_KEY}}
         INCLUDE_SYMBOLS: true
         TAG_FORMAT: Swashbuckle_v*
