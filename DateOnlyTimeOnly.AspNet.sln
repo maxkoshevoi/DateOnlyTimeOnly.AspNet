@@ -15,10 +15,11 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{C034BB86-04DE-4B74-9F71-9A7A02719CE3}"
 	ProjectSection(SolutionItems) = preProject
 		.github\workflows\build.yml = .github\workflows\build.yml
-		.github\workflows\publish.yml = .github\workflows\publish.yml
+		.github\workflows\publish-base.yml = .github\workflows\publish-base.yml
+		.github\workflows\publish-swashbuckle.yml = .github\workflows\publish-swashbuckle.yml
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DateOnlyTimeOnly.AspNet.Swashbuckle", "DateOnlyTimeOnly.AspNet.Swashbuckle\DateOnlyTimeOnly.AspNet.Swashbuckle.csproj", "{4052A95A-9C58-4503-8505-3A9E7CEEC532}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DateOnlyTimeOnly.AspNet.Swashbuckle", "DateOnlyTimeOnly.AspNet.Swashbuckle\DateOnlyTimeOnly.AspNet.Swashbuckle.csproj", "{4052A95A-9C58-4503-8505-3A9E7CEEC532}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
