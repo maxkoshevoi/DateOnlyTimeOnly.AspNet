@@ -1,0 +1,25 @@
+﻿name: 🚀 Publish Swashbuckle package
+
+on:
+  push:
+    branches: [ main ]
+    paths: 
+      - 'DateOnlyTimeOnly.AspNet.Swashbuckle/**'
+      - '.github/workflows/**'
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: 🧰 Setup .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 6.x
+    - name: 🚀 Publish NuGet
+      uses: brandedoutcast/publish-nuget@v2
+      with:
+        PROJECT_FILE_PATH: DateOnlyTimeOnly.AspNet/DateOnlyTimeOnly.AspNet.Swashbuckle.csproj
+        NUGET_KEY: ${{secrets.NUGET_API_KEY}}
+        INCLUDE_SYMBOLS: true
+        TAG_FORMAT: Swashbuckle_v*

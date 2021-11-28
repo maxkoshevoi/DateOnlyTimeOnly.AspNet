@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <PackageId>DateOnlyTimeOnly.AspNet.Swashbuckle</PackageId>
+    <Description>Adds support for receiving and returning DateOnly/TimeOnly as ISO 8601 string to ASP.NET Core Web API 6</Description>
+    <PackageTags>DateOnly, TimeOnly, AspNet, AspNetWebApi, Swagger, Swashbuckle</PackageTags>
+    <Version>1.0.2</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DateOnlyTimeOnly.AspNet" Version="1.0.2" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.2.3" />
+  </ItemGroup>
+
+</Project>
