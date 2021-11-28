@@ -1,35 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <PackageId>DateOnlyTimeOnly.AspNet</PackageId>
+    <Description>Adds support for receiving and returning DateOnly/TimeOnly as ISO 8601 string to ASP.NET Core Web API 6</Description>
+    <PackageTags>DateOnly, TimeOnly, AspNet, AspNetWebApi</PackageTags>    
+    <Version>1.0.2</Version>
   </PropertyGroup>
 
-  <PropertyGroup>
-    <PackageId>DateOnlyTimeOnly.AspNet</PackageId>
-    <Description>Adds support for recieving and returning DateOnly/TimeOnly as ISO 8601 string to ASP.NET API</Description>
-    <PackageTags>DateOnly, TimeOnly, AspNet, AspNetWebApi</PackageTags>
-    <Copyright>Maksym Koshovyi © 2021</Copyright>
-    <Authors>Maksym Koshovyi</Authors>
-    <RepositoryUrl>https://github.com/maxkoshevoi/DateOnlyTimeOnly.AspNet</RepositoryUrl>
-    <RepositoryType>git</RepositoryType>
-    <Version>1.0.1</Version>
-  </PropertyGroup>
-  
-  <PropertyGroup>
-    <EmbedUntrackedSources>true</EmbedUntrackedSources>
-    <IncludeSymbols>true</IncludeSymbols>
-    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
-  </PropertyGroup>
-  
   <ItemGroup>
     <FrameworkReference Include="Microsoft.AspNetCore.App" />
   </ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="all" />
-  </ItemGroup>
-  
 </Project>
