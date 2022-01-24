@@ -7,7 +7,7 @@ public abstract class StringTypeConverterBase<T> : TypeConverter
 {
     protected abstract T Parse(string s);
 
-    protected abstract string ToIcoString(T source);
+    protected abstract string ToIsoString(T source);
 
     public override bool CanConvertFrom(ITypeDescriptorContext? context, Type sourceType)
     {
@@ -39,7 +39,7 @@ public abstract class StringTypeConverterBase<T> : TypeConverter
     {
         if (destinationType == typeof(string) && value is T typedValue)
         {
-            return ToIcoString(typedValue);
+            return ToIsoString(typedValue);
         }
         return base.ConvertTo(context, culture, value, destinationType);
     }
