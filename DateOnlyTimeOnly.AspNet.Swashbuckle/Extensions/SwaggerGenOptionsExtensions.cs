@@ -19,7 +19,7 @@ public static class SwaggerGenOptionsExtensions
         { 
             Type = "string", 
             Format = "time", 
-            Example = OpenApiAnyFactory.CreateFromJson("\"0:11:42\"") 
+            Example = OpenApiAnyFactory.CreateFromJson("\"13:45:42.0000000\"") 
         });
     }
 }
