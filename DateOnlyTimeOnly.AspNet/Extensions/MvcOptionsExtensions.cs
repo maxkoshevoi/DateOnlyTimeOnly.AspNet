@@ -7,7 +7,7 @@ namespace Microsoft.Extensions.DependencyInjection;
 public static class MvcOptionsExtensions
 {
     /// <summary>
-    /// Adds <see cref="TypeConverter"/> to DateOnly and TimeOnly type definitions.
+    /// Adds <see cref="TypeConverter"/> to <see cref="DateOnly"/> and <see cref="TimeOnly"/> type definitions.
     /// </summary>
     /// <param name="options">Not currently used.</param>
     public static MvcOptions UseDateOnlyTimeOnlyStringConverters(this MvcOptions options)

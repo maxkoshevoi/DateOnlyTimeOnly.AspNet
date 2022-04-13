@@ -6,7 +6,7 @@ namespace Microsoft.Extensions.DependencyInjection;
 public static class JsonOptionsExtensions
 {
     /// <summary>
-    /// Adds DateOnly and TimeOnly serializers to System.Text.Json.
+    /// Adds <see cref="DateOnly"/> and <see cref="TimeOnly"/> serializers to System.Text.Json.
     /// </summary>
     public static JsonOptions UseDateOnlyTimeOnlyStringConverters(this JsonOptions options)
     {

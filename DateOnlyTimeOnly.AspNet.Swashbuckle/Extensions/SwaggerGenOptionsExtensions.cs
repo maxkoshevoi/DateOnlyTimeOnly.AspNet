@@ -6,7 +6,7 @@ namespace Microsoft.Extensions.DependencyInjection;
 public static class SwaggerGenOptionsExtensions
 {
     /// <summary>
-    /// Maps DateOnly and TimeOnly to string.
+    /// Maps <see cref="DateOnly"/> and <see cref="TimeOnly"/> to string.
     /// </summary>
     public static void UseDateOnlyTimeOnlyStringConverters(this SwaggerGenOptions options)
     {
