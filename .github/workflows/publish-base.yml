@@ -13,7 +13,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: 🚀 Publish NuGet
-      uses: alirezanet/publish-nuget@v3
+      uses: alirezanet/publish-nuget@v3.0.0
       with:
         PROJECT_FILE_PATH: DateOnlyTimeOnly.AspNet/DateOnlyTimeOnly.AspNet.csproj
         NUGET_KEY: ${{secrets.NUGET_API_KEY}}
