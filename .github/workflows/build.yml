@@ -17,6 +17,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+    - name: 🧰 Setup .NET
+      uses: actions/setup-dotnet@v2
+      with:
+        dotnet-version: 7.0.x
+        include-prerelease: true
     - name: 🏭 Restore dependencies
       run: dotnet restore
     - name: 🏭 Build
