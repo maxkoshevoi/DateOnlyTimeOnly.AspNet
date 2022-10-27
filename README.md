@@ -10,15 +10,15 @@ Get it from NuGet
 
 ## Usage
 
-Call `UseDateOnlyTimeOnlyStringConverters` on options for `AddControllers` and `AddJsonOptions`:
+Call `AddDateOnlyTimeOnlyStringConverters` on `services`:
 
 ```cs
-builder.Services
-    .AddControllers(options => options.UseDateOnlyTimeOnlyStringConverters())
-    .AddJsonOptions(options => options.UseDateOnlyTimeOnlyStringConverters());
+builder.Services.AddDateOnlyTimeOnlyStringConverters();
 ```
 
-After that all `DateOnly` and `TimeOnly` action arguments will be received and returned as ISO 8601 string.
+After that:
+- **For .NET 6**: all `DateOnly` and `TimeOnly` action arguments will be received and returned as ISO 8601 string;
+- **For .NET 7**: adds support to use `TimeOnly` as Dictionary key (the rest is available out of the box).
 
 ## Swagger support
 
