@@ -11,6 +11,7 @@ public static partial class JsonOptionsExtensions
     public static partial JsonOptions UseDateOnlyTimeOnlyStringConverters(this JsonOptions options);
 
 #if NET6_0
+    [Obsolete("Use builder.Services.AddDateOnlyTimeOnlyStringConverters() instead.")]
     public static partial JsonOptions UseDateOnlyTimeOnlyStringConverters(this JsonOptions options)
     {
         options.JsonSerializerOptions.Converters.Add(new DateOnlyJsonConverter());

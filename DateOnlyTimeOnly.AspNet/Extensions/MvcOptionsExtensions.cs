@@ -13,6 +13,7 @@ public static partial class MvcOptionsExtensions
     public static partial MvcOptions UseDateOnlyTimeOnlyStringConverters(this MvcOptions options);
 
 #if NET6_0
+    [Obsolete("Use builder.Services.AddDateOnlyTimeOnlyStringConverters() instead.")]
     public static partial MvcOptions UseDateOnlyTimeOnlyStringConverters(this MvcOptions options)
     {
         TypeDescriptor.AddAttributes(typeof(DateOnly), new TypeConverterAttribute(typeof(DateOnlyTypeConverter)));
