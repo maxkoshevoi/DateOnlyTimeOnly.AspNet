@@ -4,7 +4,7 @@
     <PackageId>DateOnlyTimeOnly.AspNet</PackageId>
     <Description>Adds support for receiving and returning DateOnly/TimeOnly as ISO 8601 string to ASP.NET Core Web API 6</Description>
     <PackageTags>DateOnly, TimeOnly, AspNet, AspNetWebApi</PackageTags>    
-    <Version>1.1.0</Version>
+    <Version>1.0.3</Version>
   </PropertyGroup>
 
   <ItemGroup>
