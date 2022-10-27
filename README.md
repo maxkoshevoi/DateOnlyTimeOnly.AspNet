@@ -1,6 +1,6 @@
 # DateOnlyTimeOnly.AspNet
 
-Adds support for receiving and returning DateOnly/TimeOnly as ISO 8601 string to ASP.NET API
+Adds support for receiving and returning DateOnly/TimeOnly as ISO 8601 string to ASP.NET Core API
 
 ## Installation
 

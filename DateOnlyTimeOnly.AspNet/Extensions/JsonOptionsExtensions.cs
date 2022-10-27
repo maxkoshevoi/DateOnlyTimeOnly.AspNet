@@ -3,15 +3,24 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Microsoft.Extensions.DependencyInjection;
 
-public static class JsonOptionsExtensions
+public static partial class JsonOptionsExtensions
 {
     /// <summary>
     /// Adds <see cref="DateOnly"/> and <see cref="TimeOnly"/> serializers to System.Text.Json.
     /// </summary>
-    public static JsonOptions UseDateOnlyTimeOnlyStringConverters(this JsonOptions options)
+    public static partial JsonOptions UseDateOnlyTimeOnlyStringConverters(this JsonOptions options);
+
+#if NET6_0
+    public static partial JsonOptions UseDateOnlyTimeOnlyStringConverters(this JsonOptions options)
     {
         options.JsonSerializerOptions.Converters.Add(new DateOnlyJsonConverter());
         options.JsonSerializerOptions.Converters.Add(new TimeOnlyJsonConverter());
         return options;
     }
+#endif
+
+#if NET7_0_OR_GREATER
+    [Obsolete("DateOnly/TimeOnly work out of the box in .NET 7+. You can remove call to this method.")]
+    public static partial JsonOptions UseDateOnlyTimeOnlyStringConverters(this JsonOptions options) => options;
+#endif
 }
