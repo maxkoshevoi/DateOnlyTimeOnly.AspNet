@@ -28,6 +28,12 @@ No additional action is needed.
 
 ### Swashbuckle
 
+#### v6.4.0 and after:
+
+No additional action is needed.
+
+#### Before v6.4.0:
+
 Install `DateOnlyTimeOnly.AspNet.Swashbuckle` package, and add `UseDateOnlyTimeOnlyStringConverters` to your swagger configuration:
 
 ```cs
