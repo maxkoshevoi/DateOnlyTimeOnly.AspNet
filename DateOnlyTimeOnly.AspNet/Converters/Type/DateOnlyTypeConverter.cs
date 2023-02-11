@@ -2,7 +2,7 @@
 
 public class DateOnlyTypeConverter : StringTypeConverterBase<DateOnly>
 {
-    protected override DateOnly Parse(string s) => DateOnly.Parse(s);
+    protected override DateOnly Parse(string s, IFormatProvider? provider) => DateOnly.Parse(s, provider);
 
-    protected override string ToIsoString(DateOnly source) => source.ToString("O");
+    protected override string ToIsoString(DateOnly source, IFormatProvider? provider) => source.ToString("O", provider);
 }
