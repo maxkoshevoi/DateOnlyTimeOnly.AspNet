@@ -1,3 +1,6 @@
-[*.{csproj,props,config,yml}]
+[*]
+trim_trailing_whitespace = true
+
+[*.{csproj,props,targets,config,yml,xml}]
 indent_style = space
 indent_size = 2
